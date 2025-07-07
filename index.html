@@ -9,15 +9,16 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: linear-gradient(to bottom, #FFD700 33%, #009900 33%, #009900 66%, #FF0000 66%);
+      min-height: 100vh;
       color: #333;
     }
 
     header {
-      background: #0099cc;
-      color: white;
+      background: rgba(255, 255, 255, 0.9);
       padding: 20px;
       text-align: center;
+      border-bottom: 4px solid #ccc;
     }
 
     header img {
@@ -45,25 +46,44 @@
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 8px;
-      width: 150px;
+      width: 160px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
 
-    .product img {
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .product img,
+    .product video {
       width: 100%;
       height: auto;
       border-radius: 5px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      font-weight: bold;
+      color: #0099cc;
     }
 
     .contact {
-      background: #eee;
+      background: rgba(255, 255, 255, 0.9);
       padding: 20px;
       text-align: center;
     }
 
+    .contact a {
+      color: #0099cc;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
-      background: #333;
+      background: rgba(0, 0, 0, 0.8);
       color: white;
       padding: 10px;
     }
@@ -72,11 +92,15 @@
       color: #0099cc;
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="A250D000-8FF7-4571-A6D3-B621714A6CCD.png" alt="Myint Store Photo" width="300">
+    <img src="A250D000-8FF7-4571-A6D3-B621714A6CCD.png" alt="Myint Store Logo">
     <h1>Myint Store</h1>
   </header>
 
@@ -96,39 +120,36 @@
           <img src="IMG_1452.jpeg" alt="Product 3">
           <p>20,000 MMK</p>
         </div>
-        <!-- Add more products here -->
+        <div class="product">
+          <video width="250" controls>
+            <source src="5015722845291409021.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>20,000 MMK</p>
+        </div>
+        <div class="product">
+          <video width="250" controls>
+            <source src="2644884486242848201.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>20,000 MMK</p>
+        </div>
+        <div class="product">
+          <video width="250" controls>
+            <source src="7367470882791512808.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>20,000 MMK</p>
+        </div>
+        <div class="product">
+          <video width="250" controls>
+            <source src="1024332998598072028.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>20,000 MMK</p>
+        </div>
       </div>
     </section>
-<!-- Add more products here -->
-<div class="product">
-  <video width="250" controls>
-    <source src="5015722845291409021.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>20000 MMK</p>
-</div>
-  <!-- Add more products here -->
-<div class="product">
-  <video width="250" controls>
-    <source src="2644884486242848201.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>20000 MMK</p>
-</div>
-  <div class="product">
-  <video width="250" controls>
-    <source src="7367470882791512808.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>20000 MMK</p>
-</div>
-  <div class="product">
-  <video width="250" controls>
-    <source src="1024332998598072028.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>20000 MMK</p>
-</div>
 
     <section class="contact">
       <h2>Contact Us</h2>
